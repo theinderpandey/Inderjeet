@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inderjeet | Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .contact-info {
+      font-size: 1rem;
+    }
+    .resume-container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .download-btn {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    /* Avoid any content breaking */
+    #resume * {
+      page-break-inside: avoid;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container" id="resume">
+    <div class="download-btn">
+      <button class="btn btn-primary" onclick="downloadPDF()">⬇️ Download as PDF</button>
+    </div>
+
+    <h1>Inderjeet</h1>
+    <p class="contact-info">
+      📧 <a href="mailto:theinderpandey@gmail.com">theinderpandey@gmail.com</a> |
+      📱 8570936967 <br>
+      💼 Java Developer | React Developer | Frontend Developer
+    </p>
+
+    <div class="mb-4">
+      <div class="section-title">Career Objective</div>
+      <p>
+        Enthusiastic and detail-oriented developer with hands-on experience in building responsive web applications using
+        React, Java, and MySQL. Passionate about writing clean, efficient code and continuously learning new technologies.
+        Seeking opportunities to contribute and grow as a frontend/backend developer in a collaborative environment.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <div class="section-title">Skills</div>
+      <p>HTML, CSS, JavaScript, Bootstrap, jQuery, React, Java, MySQL, WordPress</p>
+    </div>
+
+    <div class="mb-4">
+      <div class="section-title">Education</div>
+      <ul>
+        <li>10th — CBSE Board</li>
+        <li>12th — HBSE Board</li>
+        <li>B.Tech in Computer Science, IGU Meerpur (2020-2024)</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <div class="section-title">Experience</div>
+      <ul>
+        <li>Worked on multiple full-stack projects using React and Java.</li>
+        <li>Created dynamic web pages using ReactJS, integrated with REST APIs.</li>
+        <li>Experience in debugging and improving frontend performance.</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <div class="section-title">Projects</div>
+      <ol>
+        <li>
+          <strong>Enquiry Management System</strong><br>
+          <em>Tech:</em> HTML, CSS, JS, Spring Boot, MySQL<br>
+          A complete system to handle student enquiries, send email notifications, upload documents, and track status.
+        </li>
+        <li>
+          <strong>Portfolio Website</strong><br>
+          <em>Tech:</em> HTML, CSS, Bootstrap, JS<br>
+          Responsive personal website to showcase skills, projects, and contact details.
+        </li>
+        <li>
+          <strong>E-commerce Store (React)</strong><br>
+          <em>Tech:</em> React, Context API, FakeStoreAPI<br>
+          A frontend app that displays products, allows cart operations, and handles checkout.
+        </li>
+      </ol>
+    </div>
+
+    <div class="mb-4">
+      <div class="section-title">Certifications / Achievements</div>
+      <ul>
+        <li>Completed Java Full Stack Bootcamp (Zillionsoftech Pvt. Ltd.)</li>
+        <li>Participated in coding contests and hackathons</li>
+        <li>Developed multiple personal and academic projects</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById('resume');
+      const button = document.querySelector('.download-btn');
+      button.style.display = 'none'; // hide before download
+
+      // Measure content height in pixels
+      const contentHeight = element.offsetHeight;
+      const pxToMm = 0.264583; // 1px = 0.264583 mm
+      const heightInMm = contentHeight * pxToMm;
+
+      const opt = {
+        margin: 0,
+        filename: 'Inderjeet_Resume.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: {
+          unit: 'mm',
+          format: [210, heightInMm + 20], // A4 width, dynamic height
+          orientation: 'portrait'
+        }
+      };
+
+      html2pdf().set(opt).from(element).save().then(() => {
+        button.style.display = 'block'; // show again
+      });
+    }
+  </script>
+
+</body>
+</html>
