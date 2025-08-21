@@ -1,1035 +1,1324 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>My Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>My Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center"> </a>
 
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-
-        <div class="profile-img">
-          <img src="assets/img/profile/profile-square-1.png" alt="" class="img-fluid rounded-circle">
-        </div>
-
-        <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Inderjeet</h1>
-        </a>
-
-        <div class="social-links text-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container">
-        <div class="row g-0 align-items-center">
-
-          <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
-            <div class="content-wrapper">
-              <h1 class="hero-title">Creative <span class="typed" data-typed-items="Designer, Developer, Freelancer, Artist"></span></h1>
-              <p class="lead">I create digital experiences that inspire and engage. With a passion for clean design and innovative solutions, I transform ideas into beautiful, functional realities.</p>
-
-              <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
-                <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Happy Clients</span>
-                </div>
-              </div>
-
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
-              </div>
-
-              <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-github"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-              </div>
-            </div>
+        <nav id="navmenu" class="navmenu">
+          <div class="profile-img">
+            <img
+              src="assets/img/profile/profile-square-1.png"
+              alt=""
+              class="img-fluid rounded-circle"
+            />
           </div>
 
-          <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="200">
-            <div class="image-container">
-              <div class="floating-elements">
-                <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300">
-                  <i class="bi bi-palette"></i>
-                  <span>UI/UX Design</span>
-                </div>
-                <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
-                  <i class="bi bi-code-slash"></i>
-                  <span>Development</span>
-                </div>
-                <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="500">
-                  <i class="bi bi-lightning"></i>
-                  <span>Creative Ideas</span>
-                </div>
-              </div>
-              <img src="assets/img/profile/profile-square-1.png" alt="Portfolio Hero" class="img-fluid hero-main-image">
-              <div class="image-overlay"></div>
-            </div>
+          <a
+            href="index.html"
+            class="logo d-flex align-items-center justify-content-center active"
+          >
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.webp" alt=""> -->
+            <h1 class="sitename">Inderjeet</h1>
+          </a>
+
+          <div class="social-links text-center">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
 
-        </div>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
+    </header>
 
-    </section><!-- /Hero Section -->
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container">
+          <div class="row g-0 align-items-center">
+            <div
+              class="col-lg-6 hero-content"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="content-wrapper">
+                <h1 class="hero-title">
+                  Creative
+                  <span
+                    class="typed"
+                    data-typed-items="Designer, Developer, Freelancer, Artist"
+                  ></span>
+                </h1>
+                <p class="lead">
+                  I create digital experiences that inspire and engage. With a
+                  passion for clean design and innovative solutions, I transform
+                  ideas into beautiful, functional realities.
+                </p>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>About</h2>
-        <p>Committed to making a difference, one step at a time.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="profile-image-wrapper">
-              <div class="profile-image">
-                <img src="assets/img/profile/profile-square-1.png" alt="Profile" class="img-fluid">
-              </div>
-              <div class="signature-section">
-                <img src="assets/img/misc/signature-1.jpg" alt="Signature" class="signature">
-                <p class="quote">Building meaningful digital experiences through creative code.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <div class="intro">
-                <h2>Hi, I'm Inderjeet - a Creative Developer</h2>
-                <p>I’m a passionate Java Developer with hands-on experience in building robust, scalable, and efficient backend systems
-                  using Java, Spring Boot, and related technologies. I specialize in developing RESTful APIs, integrating databases like
-                  MySQL, and applying object-oriented principles to deliver clean, maintainable code. My focus is on writing secure,
-                  optimized applications while continuously learning and adapting to new technologies.</p>
-              </div>
-
-              <div class="skills-grid">
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="skill-icon">
-                    <i class="bi bi-palette"></i>
-                  </div>
-                  <h4>UI/UX Design</h4>
-                  <p>Skilled in crafting intuitive and visually appealing UI/UX designs.</p>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
-                  <div class="skill-icon">
-                    <i class="bi bi-code-slash"></i>
-                  </div>
-                  <h4>Frontend Dev</h4>
-                  <p>Expert in building responsive and dynamic frontend interfaces.</p>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="skill-icon">
-                    <i class="bi bi-cup-hot"></i>
-                  </div>
-                  <h4>Java Dev</h4>
-                  <p>Skilled in building high-performance backend applications.</p>
-                </div>
-              </div>
-
-              <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
-                <div class="timeline-item">
-                  <div class="year">2018</div>
-                  <div class="description">Completed Higher Secondary Education from CBSE.</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="year">2020</div>
-                  <div class="description">Completed Senior Secondary Education from HBSE.</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="year">2024</div>
-                  <div class="description">Graduated in Computer Science Engineering From IGU University.</div>
-                </div>
-              </div>
-
-              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
-                <div class="fun-fact">
-                  <span class="emoji">☕</span>
-                  <span class="text">Coffee-fueled designer based in Haryana</span>
-                </div>
-                <div class="action-buttons">
-                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                  <a href="Resume.html" class="btn btn-outline">Download Resume</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="skills-grid">
-              <div class="row g-4">
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-code-slash"></i>
-                      <h3>Frontend Development</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">HTML/CSS</span>
-                          <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">JavaScript</span>
-                          <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">React.js</span>
-                          <span class="skill-percentage">82%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Frontend Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-server"></i>
-                      <h3>Backend Development</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Java</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Spring Boot</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">MySQL</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Backend Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-palette"></i>
-                      <h3>Design &amp; Tools</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Canva</span>
-                          <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Photoshop</span>
-                          <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Illustrator</span>
-                          <span class="skill-percentage">68%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Design Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-cloud"></i>
-                      <h3>Cloud &amp; DevOps</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">AWS</span>
-                          <span class="skill-percentage">76%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Docker</span>
-                          <span class="skill-percentage">73%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Git</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End DevOps Card -->
-                </div>  
-              </div>
-            </div><!-- End Skills Grid -->
-          </div>
-
-          <div class="col-lg-4">
-            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
-              <h3>Professional Expertise</h3>
-             <P>Java developer with strong expertise in building robust, scalable and secure applications using core Java and advance Java frameworks like Spring Boot and Hibernate</p>
-              <div class="summary-stats">
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="stat-circle">
-                    <i class="bi bi-trophy"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Years Experience</span>
-                  </div>
-                </div>
-
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="stat-circle">
-                    <i class="bi bi-diagram-3"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">50+</span>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                  <div class="stat-item">
+                    <span
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="10"
+                      data-purecounter-duration="2"
+                      >0</span
+                    >
                     <span class="stat-label">Projects Completed</span>
                   </div>
-                </div>
-
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="stat-circle">
-                    <i class="bi bi-people"></i>
+                  <div class="stat-item">
+                    <span
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="2"
+                      data-purecounter-duration="2"
+                      >0</span
+                    >
+                    <span class="stat-label">Years Experience</span>
                   </div>
-                  <div class="stat-info">
-                    <span class="stat-number">30+</span>
+                  <div class="stat-item">
+                    <span
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="10"
+                      data-purecounter-duration="2"
+                      >0</span
+                    >
                     <span class="stat-label">Happy Clients</span>
                   </div>
                 </div>
-              </div>
 
-              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
-                <h4>Certifications</h4>
-                <div class="badge-list">
-                  <div class="skill-badge">AWS Certified</div>
-                  <div class="skill-badge">Laravel Expert</div>
-                  <div class="skill-badge">Vue.js Developer</div>
-                  <div class="skill-badge">UI/UX Design</div>
-                </div>
-              </div>
-            </div><!-- End Skills Summary -->
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="experience-section">
-              <div class="section-header">
-                <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
-                <p class="section-subtitle">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas vestibulum tortor quam.</p>
-              </div>
-
-              <div class="experience-cards">
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Technical Director</h3>
-                      <h4>Proin Corporation</h4>
-                    </div>
-                    <span class="duration">2022 - Present</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra veniam sit amet lacus cursus.</p>
-                    <ul class="achievements">
-                      <li>Managed cross-functional teams of 15+ professionals</li>
-                      <li>Implemented agile methodologies resulting in 40% efficiency gain</li>
-                      <li>Led digital transformation initiatives worth $2M+</li>
-                    </ul>
-                  </div>
+                <div
+                  class="hero-actions"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
 
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Senior Development Manager</h3>
-                      <h4>Consectetur Solutions Inc</h4>
-                    </div>
-                    <span class="duration">2018 - 2022</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim donec pede justo fringilla vel.</p>
-                  </div>
-                </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Product Development Specialist</h3>
-                      <h4>Adipiscing Technologies</h4>
-                    </div>
-                    <span class="duration">2015 - 2018</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem maecenas nec odio et ante tincidunt tempus donec vitae sapien ut.</p>
-                  </div>
+                <div
+                  class="social-links"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="education-section">
-              <div class="section-header">
-                <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget dolor aenean massa.</p>
-              </div>
-
-              <div class="education-timeline">
-                <div class="timeline-track"></div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Master of Computer Science</h3>
-                      <span class="year">2015 - 2017</span>
-                    </div>
-                    <h4 class="institution">Tempus University</h4>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec quam felis ultricies nec.</p>
+            <div
+              class="col-lg-6 hero-image"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div class="image-container">
+                <div class="floating-elements">
+                  <div
+                    class="floating-card card-1"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <i class="bi bi-palette"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                  <div
+                    class="floating-card card-2"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <i class="bi bi-code-slash"></i>
+                    <span>Development</span>
+                  </div>
+                  <div
+                    class="floating-card card-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <i class="bi bi-lightning"></i>
+                    <span>Creative Ideas</span>
                   </div>
                 </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Bachelor of Information Technology</h3>
-                      <span class="year">2011 - 2015</span>
-                    </div>
-                    <h4 class="institution">Rhoncus Institute of Technology</h4>
-                    <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi aenean vulputate.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="500">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Certificate in Digital Innovation</h3>
-                      <span class="year">2020</span>
-                    </div>
-                    <h4 class="institution">Ligula Academy</h4>
-                    <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh donec sodales sagittis magna.</p>
-                  </div>
-                </div>
+                <img
+                  src="assets/img/profile/profile-square-1.png"
+                  alt="Portfolio Hero"
+                  class="img-fluid hero-main-image"
+                />
+                <div class="image-overlay"></div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Hero Section -->
 
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-
-          <!-- Card 1 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-stack"></i>
-              </div>
-              <h3>Digital Solutions</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 2 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h3>Secure Systems</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 3 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <h3>Growth Strategy</h3>
-              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 4 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-cpu"></i>
-              </div>
-              <h3>AI Integration</h3>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 5 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-cloud-arrow-up"></i>
-              </div>
-              <h3>Cloud Services</h3>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 6 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-gear"></i>
-              </div>
-              <h3>Process Automation</h3>
-              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  Learn More
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>About</h2>
+          <p>Committed to making a difference, one step at a time.</p>
         </div>
+        <!-- End Section Title -->
 
-      </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="profile-image-wrapper">
+                <div class="profile-image">
+                  <img
+                    src="assets/img/profile/profile-square-1.png"
+                    alt="Profile"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="signature-section">
+                  <img
+                    src="assets/img/misc/signature-1.jpg"
+                    alt="Signature"
+                    class="signature"
+                  />
+                  <p class="quote">
+                    Building meaningful digital experiences through creative
+                    code.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    </section><!-- /Services Section -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-content">
+                <div class="intro">
+                  <h2>Hi, I'm Inderjeet - a Creative Developer</h2>
+                  <p>
+                    I’m a passionate Java Developer with hands-on experience in
+                    building robust, scalable, and efficient backend systems
+                    using Java, Spring Boot, and related technologies. I
+                    specialize in developing RESTful APIs, integrating databases
+                    like MySQL, and applying object-oriented principles to
+                    deliver clean, maintainable code. My focus is on writing
+                    secure, optimized applications while continuously learning
+                    and adapting to new technologies.
+                  </p>
+                </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+                <div class="skills-grid">
+                  <div
+                    class="skill-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <div class="skill-icon">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                    <h4>UI/UX Design</h4>
+                    <p>
+                      Skilled in crafting intuitive and visually appealing UI/UX
+                      designs.
+                    </p>
+                  </div>
+                  <div
+                    class="skill-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="450"
+                  >
+                    <div class="skill-icon">
+                      <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4>Frontend Dev</h4>
+                    <p>
+                      Expert in building responsive and dynamic frontend
+                      interfaces.
+                    </p>
+                  </div>
+                  <div
+                    class="skill-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <div class="skill-icon">
+                      <i class="bi bi-cup-hot"></i>
+                    </div>
+                    <h4>Java Dev</h4>
+                    <p>
+                      Skilled in building high-performance backend applications.
+                    </p>
+                  </div>
+                </div>
 
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">
-              <i class="bi bi-grid-3x3"></i> All Projects
-            </li>
-            <li data-filter=".filter-ui">
-              UI/UX
-            </li>
-            <li data-filter=".filter-development">
-              Development
-            </li>
-            <li data-filter=".filter-photography">
-              Photography
-            </li>
-            <li data-filter=".filter-marketing">
-              Marketing
-            </li>
-          </ul>
-
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Mobile Banking App</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
+                <div
+                  class="journey-timeline"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="description">
+                      Completed Higher Secondary Education from CBSE.
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">E-Learning Platform</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
+                  <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="description">
+                      Completed Senior Secondary Education from HBSE.
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Urban Architecture</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
+                  <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="description">
+                      Graduated in Computer Science Engineering From IGU
+                      University.
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Social Media Campaign</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
+                <div
+                  class="cta-section"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="fun-fact">
+                    <span class="emoji">☕</span>
+                    <span class="text"
+                      >Coffee-fueled designer based in Haryana</span
+                    >
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Smart Home Interface</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
+                  <div class="action-buttons">
+                    <a href="#portfolio" class="btn btn-primary"
+                      >View My Work</a
+                    >
+                    <a href="Resume.html" class="btn btn-outline"
+                      >Download Resume</a
+                    >
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">Cloud Management System</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Nature Collection</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Brand Strategy</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- /About Section -->
 
-      </div>
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="skills-grid">
+                <div class="row g-4">
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Frontend Development</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percentage">95%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="95"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
 
-    </section><!-- /Portfolio Section -->
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">88%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="88"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-12">
-            <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-percentage">82%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="82"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">The New York Times</div>
+                    <!-- End Frontend Card -->
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-server"></i>
+                        <h3>Backend Development</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">90%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="90"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Spring Boot</span>
+                            <span class="skill-percentage">85%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-percentage">80%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="80"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Backend Card -->
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="400"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-palette"></i>
+                        <h3>Design &amp; Tools</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Canva</span>
+                            <span class="skill-percentage">85%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Photoshop</span>
+                            <span class="skill-percentage">70%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Illustrator</span>
+                            <span class="skill-percentage">68%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="68"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Design Card -->
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="500"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-cloud"></i>
+                        <h3>Cloud &amp; DevOps</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-percentage">76%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="76"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-percentage">73%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="73"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-percentage">90%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="90"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End DevOps Card -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Skills Grid -->
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="skills-summary"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <h3>Professional Expertise</h3>
+                <p>
+                  Java developer with strong expertise in building robust,
+                  scalable and secure applications using core Java and advance
+                  Java frameworks like Spring Boot and Hibernate
+                </p>
+                <div class="summary-stats">
+                  <div
+                    class="stat-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <div class="stat-circle">
+                      <i class="bi bi-trophy"></i>
+                    </div>
+                    <div class="stat-info">
+                      <span class="stat-number">2+</span>
+                      <span class="stat-label">Years Experience</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="stat-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <div class="stat-circle">
+                      <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <div class="stat-info">
+                      <span class="stat-number">10+</span>
+                      <span class="stat-label">Projects Completed</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="stat-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <div class="stat-circle">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="stat-info">
+                      <span class="stat-number">10+</span>
+                      <span class="stat-label">Happy Clients</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </div>
-                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">Washington Post</div>
-                    </div>
+
+                <div
+                  class="skills-badges"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <h4>Certifications</h4>
+                  <div class="badge-list">
+                    <div class="skill-badge">Certified Java dveloper</div>
+                    <div class="skill-badge">Full stack dev</div>
+                    <div class="skill-badge">React.js</div>
+                    <div class="skill-badge">UI/UX Design</div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+              </div>
+              <!-- End Skills Summary -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Resume</h2>
+          <p>A detailed overview of my skills, experience, and education.</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="experience-section">
+                <div class="section-header">
+                  <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
+                  <p class="section-subtitle">
+                    From education to experience, here’s my journey so far.
+                  </p>
+                </div>
+
+                <div class="experience-cards">
+                  <div
+                    class="experience-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <div class="card-header">
+                      <div class="role-info">
+                        <h3>Java full stack developer</h3>
+                        <h4>Zillionsoftech Pvt. Ltd.</h4>
+                      </div>
+                      <span class="duration">May 2025 - Present</span>
                     </div>
-                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">The Guardian</div>
+                    <div class="card-body">
+                      <p>
+                        Currently working on an Institute Management System,
+                        leveraging both frontend and backend skills. On the
+                        frontend, I create responsive and user-friendly
+                        interfaces, while on the backend I develop robust APIs,
+                        manage databases, and ensure smooth functionality.
+                        Building complete and scalable solutions.
+                      </p>
+                      <ul class="achievements">
+                        <li>
+                          Designing and developing responsive user interfaces
+                          for seamless user experience.
+                        </li>
+                        <li>
+                          Built backend APIs to manage data and business logic.
+                        </li>
+                        <li>
+                          Ensuring smooth database operations and scalability
+                          for the Institute Management System.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="experience-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <div class="card-header">
+                      <div class="role-info">
+                        <h3>UI/UX Developer</h3>
+                        <h4>R-Studio</h4>
+                      </div>
+                      <span class="duration">March 2025 - april 2025</span>
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Developed the Complete UI for the R-studio website using
+                        my skills and experience in frontend technologies such
+                        as HTML, CSS, Javascript and Bootstrap.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="testimonials-container">
-              <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": 1,
-                    "spaceBetween": 30,
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      },
-                      "992": {
-                        "slidesPerView": 3
-                      }
-                    }
-                  }
-                </script>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="education-section">
+                <div class="section-header">
+                  <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
+                  <p class="section-subtitle">
+                    A journey of consistent learning and achievement.
+                  </p>
+                </div>
 
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
+                <div class="education-timeline">
+                  <div class="timeline-track"></div>
+
+                  <div
+                    class="education-item"
+                    data-aos="slide-up"
+                    data-aos-delay="300"
+                  >
+                    <div class="timeline-marker"></div>
+                    <div class="education-content">
+                      <div class="degree-header">
+                        <h3>Bachelor of Technology</h3>
+                        <span class="year">2020 - 2024</span>
+                      </div>
+                      <h4 class="institution">Indira Gandhi University</h4>
+                      <p>
+                        Completed Bachelor of Technology from Indira Gandhi
+                        University with a strong foundation in engineering
+                        concepts and practical problem-solving.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="education-item"
+                    data-aos="slide-up"
+                    data-aos-delay="500"
+                  >
+                    <div class="timeline-marker"></div>
+                    <div class="education-content">
+                      <div class="degree-header">
+                        <h3>Certificate in Java development</h3>
+                        <span class="year">2024 - 2025</span>
+                      </div>
+                      <h4 class="institution">Zillionsoftech pvt. ltd.</h4>
+                      <p>
+                        Completed my Java Development journey at Zillionsoftech
+                        Pvt. Ltd., gaining hands-on experience in building
+                        real-world applications and enhancing coding skills
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Services</h2>
+          <p>Delivering design and development with creativity and precision</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-stack"></i>
+                </div>
+                <h3>Digital Solutions</h3>
+                <p>
+                  From responsive designs to interactive features, I deliver
+                  user-friendly and impactful web experiences that help
+                  businesses and individuals grow online.
+                </p>
+                <div class="card-links"></div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 2 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>Secure Systems</h3>
+                <p>
+                  Building reliable and secure systems with clean code, strong
+                  structures, and best practices to ensure data protection,
+                  stability, and user trust.
+                </p>
+                <div class="card-links"></div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 3 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <h3>Growth Strategy</h3>
+                <p>
+                  Crafting smart strategies that combine design, development,
+                  and user experience to drive engagement, boost visibility, and
+                  support sustainable digital growth.
+                </p>
+                <div class="card-links"></div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 4 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <h3>AI Integration</h3>
+                <p>
+                  Enhancing digital solutions with AI-powered features that
+                  improve efficiency, personalize user experiences, and unlock
+                  smarter ways to interact with technology.
+                </p>
+                <div class="card-links"></div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 5 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-cloud-arrow-up"></i>
+                </div>
+                <h3>Cloud Services</h3>
+                <p>
+                  Delivering scalable and reliable cloud-based solutions that
+                  enable easy access, secure storage, and seamless performance
+                  across devices.
+                </p>
+                <div class="card-links"></div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 6 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <h3>Process Automation</h3>
+                <p>
+                  Streamlining repetitive tasks with smart automation to save
+                  time, reduce errors, and improve overall efficiency in digital
+                  workflows.
+                </p>
+                <div class="card-links"></div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Portfolio</h2>
+          <p>Here is an overview of my projects</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <li data-filter="*" class="filter-active">
+                <i class="bi bi-grid-3x3"></i> All Projects
+              </li>
+              <li data-filter=".filter-ui">UI/UX</li>
+              <li data-filter=".filter-development">Development</li>
+              <li data-filter=".filter-photography">Photography</li>
+              <li data-filter=".filter-marketing">Marketing</li>
+            </ul>
+
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-1.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">UI/UX Design</div>
+                        <h3 class="entry-title">Mobile Banking App</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-1.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-ui"
+                            data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-10.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Development</div>
+                        <h3 class="entry-title">E-Learning Platform</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-10.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-development"
+                            data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-7.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Photography</div>
+                        <h3 class="entry-title">Urban Architecture</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-7.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-photography"
+                            data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-4.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Marketing</div>
+                        <h3 class="entry-title">Social Media Campaign</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-4.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-marketing"
+                            data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-2.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">UI/UX Design</div>
+                        <h3 class="entry-title">Smart Home Interface</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-2.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-ui"
+                            data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-11.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Development</div>
+                        <h3 class="entry-title">Cloud Management System</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-11.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-development"
+                            data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-8.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Photography</div>
+                        <h3 class="entry-title">Nature Collection</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-8.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-photography"
+                            data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-5.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Marketing</div>
+                        <h3 class="entry-title">Brand Strategy</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-5.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-marketing"
+                            data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Testimonials</h2>
+          <p>Trusted by clients, shaped by experiences</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="critic-reviews"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="critic-review">
+                      <div class="review-quote">"</div>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -1038,42 +1327,18 @@
                         <i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
+                        "Working with him was an absolute pleasure. The website
+                        he built for my business is fast, modern, and easy to
+                        use. Highly recommended!"
                       </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-1.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Jane Smith</h3>
-                          <h4>Book Enthusiast</h4>
-                        </div>
+                      <div class="critic-info">
+                        <div class="critic-name">Rahul Verma</div>
                       </div>
                     </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.
-                      </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-2.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Michael Johnson</h3>
-                          <h4>Sci-Fi Blogger</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
+                  </div>
+                  <div class="col-md-4">
+                    <div class="critic-review">
+                      <div class="review-quote">"</div>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -1082,20 +1347,18 @@
                         <i class="bi bi-star-half"></i>
                       </div>
                       <p>
-                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.
+                        He transformed my ideas into a beautiful and functional
+                        website. His attention to detail and creativity truly
+                        stand out.
                       </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-3.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Emily Davis</h3>
-                          <h4>Book Club President</h4>
-                        </div>
+                      <div class="critic-info">
+                        <div class="critic-name">Priya Sharma</div>
                       </div>
                     </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
+                  </div>
+                  <div class="col-md-4">
+                    <div class="critic-review">
+                      <div class="review-quote">"</div>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -1104,246 +1367,450 @@
                         <i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur.
+                        Very professional and reliable. Delivered the project on
+                        time with excellent quality. The design was beyond my
+                        expectations.
                       </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-4.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Robert Wilson</h3>
-                          <h4>Literary Reviewer</h4>
+                      <div class="critic-info">
+                        <div class="critic-name">Arjun Mehta</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonials-container">
+                <div
+                  class="swiper testimonials-slider init-swiper"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": 1,
+                      "spaceBetween": 30,
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      },
+                      "breakpoints": {
+                        "768": {
+                          "slidesPerView": 2
+                        },
+                        "992": {
+                          "slidesPerView": 3
+                        }
+                      }
+                    }
+                  </script>
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                          He created a personal portfolio for me that perfectly
+                          reflects my work. The layout is clean, and it works
+                          smoothly on all devices.
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/person-f-1.png"
+                            alt="Reviewer"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Neha Kapoor</h3>
+                            <h4>Freelance Writer</h4>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div><!-- End testimonial item -->
+                    <!-- End testimonial item -->
 
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                          From design to execution, the whole process was
+                          seamless. He understood my requirements and delivered
+                          exactly what I needed.
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/person-m-2.png"
+                            alt="Reviewer"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Vikram Singh</h3>
+                            <h4>Small Buisness Owner</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </div>
+                        <p>
+                          His work ethic and creativity are impressive. The
+                          portfolio site he built for our team project is
+                          user-friendly, responsive, and visually appealing.
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/person-f-3.png"
+                            alt="Reviewer"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Ananya Iyer</h3>
+                            <h4>Project Manager</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                          He transformed my imagination into reality using his
+                          UI/UX skills. I strongly recommended him to every
+                          person out there looking for an amazing developer.
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/sahildahiya.jpg"
+                            alt="Reviewer"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Sahil dahiya</h3>
+                            <h4>Startup founder</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End testimonial item -->
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+              <div class="overall-rating">
+                <div class="rating-number">4.8</div>
+                <div class="rating-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p>Based on 230+ reviews</p>
+                <div class="rating-platforms">
+                  <span>Goodreads</span>
+                  <span>Amazon</span>
+                  <span>Barnes &amp; Noble</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Testimonials Section -->
 
-        <div class="row">
-          <div class="col-12 text-center" data-aos="fade-up">
-            <div class="overall-rating">
-              <div class="rating-number">4.8</div>
-              <div class="rating-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
+      <!-- Faq Section -->
+      <section id="faq" class="faq section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are some quick answers to things you might want to know</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="faq-container">
+                <div class="faq-item faq-active">
+                  <h3>What technologies do you specialize in?</h3>
+                  <div class="faq-content">
+                    <p>
+                      I primarily work with Java, Spring Boot, React.js, HTML,
+                      CSS, JavaScript, and MySQL. I'm also comfortable with
+                      tools like Git, Bootstrap, and WordPress.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Are you open to freelance or remote projects?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Yes, I’m open to freelance, part-time, and remote
+                      opportunities that align with my skills and interests.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Do you build both frontend and backend?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Yes! I’m a full-stack developer with experience in
+                      building complete web applications — from frontend
+                      interfaces to backend APIs and databases.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>How can I contact you for work or collaboration?</h3>
+                  <div class="faq-content">
+                    <p>
+                      You can email me at theinderpandey@gmail.com or use the
+                      contact form on this website.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+                <!-- End Faq item-->
               </div>
-              <p>Based on 230+ reviews</p>
-              <div class="rating-platforms">
-                <span>Goodreads</span>
-                <span>Amazon</span>
-                <span>Barnes &amp; Noble</span>
+            </div>
+            <!-- End Faq Column-->
+          </div>
+        </div>
+      </section>
+      <!-- /Faq Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Contact</h2>
+          <p>
+            Feel free to reach out via phone, email, or visit us at our office.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-7">
+              <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                <h3>Get In Touch</h3>
+                <p>
+                  Contact me if you have an idea. I'd be happy to turn it into
+                  reality.
+                </p>
+                <!-- Contact Form (EmailJS) -->
+                <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        placeholder="Subject"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="6"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div id="loading" style="display: none">Loading...</div>
+                      <div
+                        id="error-message"
+                        style="color: red; display: none"
+                      ></div>
+                      <div
+                        id="sent-message"
+                        style="color: green; display: none"
+                      >
+                        Your message has been sent. Thank you!
+                      </div>
+
+                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                <h3>Contact Info</h3>
+                <p>
+                  Reach us by phone, email, or at our office location below.
+                </p>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Our Location</h4>
+                    <p>Street No. 5, Ajay nagar</p>
+                    <p>Rewari, Haryana 123401</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon-box">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Phone Number</h4>
+                    <p>+91 8570936967</p>
+                    <p>+91 9729226912</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Email Address</h4>
+                    <p>Theinderpandey@gmail.com</p>
+                    <p>Thesahildahiya@gmail.com</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- /Testimonials Section -->
+      </section>
+      <!-- /Contact Section -->
+    </main>
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Frequently Asked Questions</h2>
-        <p>Here are some quick answers to things you might want to know</p>
-      </div><!-- End Section Title -->
-
+    <footer id="footer" class="footer dark-background">
       <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>What technologies do you specialize in?</h3>
-                <div class="faq-content">
-                  <p>I primarily work with Java, Spring Boot, React.js, HTML, CSS, JavaScript, and MySQL. I'm also comfortable with tools like Git, Bootstrap, and WordPress.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Are you open to freelance or remote projects?</h3>
-                <div class="faq-content">
-                  <p>Yes, I’m open to freelance, part-time, and remote opportunities that align with my skills and interests.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Do you build both frontend and backend?</h3>
-                <div class="faq-content">
-                  <p>Yes! I’m a full-stack developer with experience in building complete web applications — from frontend interfaces to backend APIs and databases.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>How can I contact you for work or collaboration?</h3>
-                <div class="faq-content">
-                  <p>You can email me at theinderpandey@gmail.com or use the contact form on this website.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item--> <!-- End Faq item-->
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
+        <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
         </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via phone, email, or visit us at our office.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-
-                </div>
-              </form>
-
-            </div>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Contact Info</h3>
-              <p>Reach us by phone, email, or at our office location below.</p>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Our Location</h4>
-                  <p>Street No. 5, Ajay nagar</p>
-                  <p> Rewari, Haryana 123401</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+91 8570936967</p>
-                  <p>+91 9729226912</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email Address</h4>
-                  <p>Theinderpandey@gmail.com</p>
-                  <p>Thesahildahiya@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by
+          <a href="https://www.instagram.com/nullpointerguy/">Inderjeet</a>
         </div>
-
       </div>
+    </footer>
 
-    </section><!-- /Contact Section -->
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  </main>
+    <!-- Success Popup -->
+<div id="success-popup" class="popup">
+  <div class="popup-content">
+    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 70 70">
+      <circle fill="none" stroke="#2196F3" stroke-width="3" cx="35" cy="35" r="34"/>
+      <path fill="none" stroke="#2196F3" stroke-width="3" d="M20 37 L30 47 L50 27"/>
+    </svg>
+    <p>Message Sent Successfully!</p>
+  </div>
+</div>
 
-  <footer id="footer" class="footer dark-background">
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Style</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://www.instagram.com/nullpointerguy/">NPG Software Solutions</a>
-      </div>
-    </div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/vendor/Emailjsform/Contact.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
